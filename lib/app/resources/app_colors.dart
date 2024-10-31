@@ -10,16 +10,16 @@ class AppColors {
   static const MaterialColor materialPrimary = MaterialColor(
     0xFF2DC653,
     <int, Color>{
-      50: Color(0xFF2DC653),
-      100: Color(0xFF2DC653),
-      200: Color(0xFF2DC653),
-      300: Color(0xFF2DC653),
-      400: Color(0xFF2DC653),
-      500: Color(0xFF2DC653),
-      600: Color(0xFF2DC653),
-      700: Color(0xFF2DC653),
-      800: Color(0xFF2DC653),
-      900: Color(0xFF2DC653),
+      50: Color(0x992DEEAA),
+      100: Color(0x992DEEAA),
+      200: Color(0x992DEEAA),
+      300: Color(0x992DEEAA),
+      400: Color(0x992DEEAA),
+      500: Color(0x992DEEAA),
+      600: Color(0x992DEEAA),
+      700: Color(0x992DEEAA),
+      800: Color(0x992DEEAA),
+      900: Color(0x992DEEAA),
     },
   );
 
@@ -28,7 +28,7 @@ class AppColors {
 
   // Other Color
   static const Color navigationBar = Color(0xFF0D1B2A);
-  static const Color splash = Color(0x992DC653);
+  static const Color splash = Color(0x992DEEAA);
   static const Color black = Color(0xFF232323);
   static const Color gray = Color(0xFF929292);
   static const Color lightGray = Color(0xFFDEDEDE);

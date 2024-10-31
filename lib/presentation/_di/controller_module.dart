@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:kutulis_mo/core/data/repository/note/note_repository.dart';
+import 'package:kutulis_mo/presentation/screen/note_editor/note_editor_screen_controller.dart';
 import 'package:kutulis_mo/presentation/screen/note_list/note_list_screen_controller.dart';
 
 class ControllerModule extends Bindings {
@@ -8,7 +10,7 @@ class ControllerModule extends Bindings {
     /// Find Repository
     /// ========================================================================
 
-    // final authRepository = Get.find<AuthRepository>();
+    final noteRepository = Get.find<NoteRepository>();
 
     /// ========================================================================
     /// Screen and Component
@@ -23,7 +25,12 @@ class ControllerModule extends Bindings {
 
     // Note List Controller -------------------------------------------------------
     Get.lazyPut<NoteListScreenController>(
-      () => NoteListScreenController(),
+      () => NoteListScreenController(noteRepository: noteRepository),
+    );
+
+    // Note Editor Controller -------------------------------------------------------
+    Get.lazyPut<NoteEditorScreenController>(
+      () => NoteEditorScreenController(noteRepository: noteRepository),
     );
   }
 }
